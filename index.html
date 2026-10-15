@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Джанкорозов Расул — Frontend Developer</title>
+  <link rel="icon" type="image/png" href="logo.svg" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <img src="logo.svg" alt="Джанкорозов Расул" class="nav-logo-img" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home"     data-ru="Главная"   data-kg="Башкы">Главная</a></li>
+        <li><a href="#about"    data-ru="Обо мне"   data-kg="Мен жөнүндө">Обо мне</a></li>
+        <li><a href="#skills"   data-ru="Навыки"    data-kg="Билгичтиктер">Навыки</a></li>
+        <li><a href="#projects" data-ru="Проекты"   data-kg="Долбоорлор">Проекты</a></li>
+        <li><a href="#contact"  data-ru="Контакты"  data-kg="Байланыш">Контакты</a></li>
+      </ul>
+      <div class="nav-right">
+        <!-- Переключатель языка -->
+        <div class="lang-switcher" id="langSwitcher">
+          <button class="lang-btn active" data-lang="ru">RU</button>
+          <span class="lang-divider">|</span>
+          <button class="lang-btn" data-lang="kg">KG</button>
+        </div>
+        <button class="burger" id="burger" aria-label="Открыть меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-greeting" data-ru="Привет, я —" data-kg="Саламатсызбы, мен —">Привет, я —</p>
+      <h1 class="hero-name">Расул <span class="gold">Джанкорозов</span></h1>
+      <h2 class="hero-title">
+        <span class="typewriter" id="typewriter"></span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-sub" data-ru="Начинающий IT-специалист &amp; Frontend разработчик" data-kg="Жаңы IT адиси &amp; Frontend иштеп чыгуучу">
+        Начинающий IT-специалист &amp; Frontend разработчик
+      </p>
+      <div class="hero-langs">
+        <span class="lang-badge">🇰🇬 Кырг.</span>
+        <span class="lang-badge">🇷🇺 Рус.</span>
+        <span class="lang-badge">🇬🇧 Англ.</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary" data-ru="Посмотреть проекты" data-kg="Долбоорлорду көрүү">Посмотреть проекты</a>
+        <a href="#contact"  class="btn btn-outline"  data-ru="Написать мне"       data-kg="Мага жазуу">Написать мне</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span data-ru="Листай" data-kg="Ылдый">Листай</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <h2 class="section-title" data-ru="Обо <span class='gold'>мне</span>" data-kg="Мен <span class='gold'>жөнүндө</span>">
+        Обо <span class="gold">мне</span>
+      </h2>
+      <div class="about-grid">
+        <div class="about-avatar">
+          <div class="avatar-ring">
+            <img src="logo.svg" alt="Логотип Расул Джанкорозов" class="avatar-logo-img" />
+          </div>
+          <div class="avatar-decor"></div>
+        </div>
+        <div class="about-text">
+          <p class="about-desc"
+            data-ru="Привет! Меня зовут &lt;strong&gt;Расул&lt;/strong&gt; — начинающий IT-специалист и Frontend разработчик. Я увлечён созданием красивых, функциональных и удобных веб-интерфейсов. Постоянно развиваюсь, изучаю новые технологии и работаю над реальными проектами."
+            data-kg="Саламатсызбы! Менин атым &lt;strong&gt;Расул&lt;/strong&gt; — мен жаңы IT адиси жана Frontend иштеп чыгуучуман. Мен сонун, функционалдуу жана ыңгайлуу веб-интерфейстерди жасоого кызыкмын. Дайыма өнүгүп, жаңы технологияларды үйрөнүп, реалдуу долбоорлор үстүндө иштеп жатам.">
+            Привет! Меня зовут <strong>Расул</strong> — начинающий IT-специалист и Frontend разработчик.
+            Я увлечён созданием красивых, функциональных и удобных веб-интерфейсов.
+            Постоянно развиваюсь, изучаю новые технологии и работаю над реальными проектами.
+          </p>
+          <div class="about-info">
+            <div class="info-item">
+              <i class="fa-solid fa-user info-icon"></i>
+              <div>
+                <span class="info-label" data-ru="Имя" data-kg="Ат">Имя</span>
+                <span class="info-value">Расул Джанкорозов</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-envelope info-icon"></i>
+              <div>
+                <span class="info-label" data-ru="Почта" data-kg="Почта">Почта</span>
+                <span class="info-value">janrasula.2011@gmail.com</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-brands fa-github info-icon"></i>
+              <div>
+                <span class="info-label">GitHub</span>
+                <span class="info-value">
+                  <a href="https://github.com/rasul2011-coder" target="_blank" rel="noopener">rasul2011-coder</a>
+                </span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-globe info-icon"></i>
+              <div>
+                <span class="info-label" data-ru="Языки" data-kg="Тилдер">Языки</span>
+                <span class="info-value" data-ru="Кыргызский, Русский, Английский" data-kg="Кыргызча, Орусча, Англисче">Кыргызский, Русский, Английский</span>
+              </div>
+            </div>
+          </div>
+          <a href="https://github.com/rasul2011-coder" target="_blank" rel="noopener" class="btn btn-primary"
+             data-ru="Мой GitHub" data-kg="Менин GitHub">
+            <i class="fa-brands fa-github"></i> Мой GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <h2 class="section-title" data-ru="Мои <span class='gold'>навыки</span>" data-kg="Менин <span class='gold'>билгичтиктерим</span>">
+        Мои <span class="gold">навыки</span>
+      </h2>
+      <div class="skills-grid">
+        <div class="skill-card" data-delay="0">
+          <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+          <span class="skill-name">HTML5</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-card" data-delay="100">
+          <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
+          <span class="skill-name">CSS3</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-card" data-delay="200">
+          <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+          <span class="skill-name">JavaScript</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+        <div class="skill-card" data-delay="300">
+          <div class="skill-icon"><i class="fa-brands fa-react"></i></div>
+          <span class="skill-name">React</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+        </div>
+        <div class="skill-card" data-delay="400">
+          <div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div>
+          <span class="skill-name">Git</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="50"></div></div>
+        </div>
+        <div class="skill-card" data-delay="500">
+          <div class="skill-icon"><i class="fa-brands fa-github"></i></div>
+          <span class="skill-name">GitHub</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <h2 class="section-title" data-ru="Мои <span class='gold'>проекты</span>" data-kg="Менин <span class='gold'>долбоорлорум</span>">
+        Мои <span class="gold">проекты</span>
+      </h2>
+      <div class="projects-grid">
+
+        <div class="project-card" data-delay="0">
+          <div class="project-header">
+            <div class="project-icon"><i class="fa-solid fa-gamepad"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/rasul2011-coder" target="_blank" rel="noopener" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">E-Zone</h3>
+          <p class="project-desc"
+             data-ru="Интерактивная платформа в игровой тематике. Фронтенд проект с современным UI/UX дизайном."
+             data-kg="Оюн темасындагы интерактивдүү платформа. Заманбап UI/UX дизайны менен frontend долбоор.">
+            Интерактивная платформа в игровой тематике. Фронтенд проект с современным UI/UX дизайном.
+          </p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-delay="150">
+          <div class="project-header">
+            <div class="project-icon"><i class="fa-solid fa-leaf"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/rasul2011-coder" target="_blank" rel="noopener" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">HabitFlow</h3>
+          <p class="project-desc"
+             data-ru="Приложение для отслеживания привычек и личной продуктивности. Удобный и минималистичный интерфейс."
+             data-kg="Адаттарды жана жеке өндүрүмдүүлүктү көзөмөлдөөгө арналган колдонмо. Ыңгайлуу жана минималисттик интерфейс.">
+            Приложение для отслеживания привычек и личной продуктивности. Удобный и минималистичный интерфейс.
+          </p>
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">CSS</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <h2 class="section-title" data-ru="Связаться <span class='gold'>со мной</span>" data-kg="Мени менен <span class='gold'>байланышуу</span>">
+        Связаться <span class="gold">со мной</span>
+      </h2>
+      <p class="contact-sub" data-ru="Открыт к новым возможностям и сотрудничеству. Напишите мне!" data-kg="Жаңы мүмкүнчүлүктөргө жана кызматташтыкка ачыкмын. Жазыңыз!">
+        Открыт к новым возможностям и сотрудничеству. Напишите мне!
+      </p>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <h4 data-ru="Почта" data-kg="Почта">Почта</h4>
+          <a href="mailto:janrasula.2011@gmail.com">janrasula.2011@gmail.com</a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+          <h4>GitHub</h4>
+          <a href="https://github.com/rasul2011-coder" target="_blank" rel="noopener">rasul2011-coder</a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fa-solid fa-globe"></i></div>
+          <h4 data-ru="Языки" data-kg="Тилдер">Языки</h4>
+          <span data-ru="Кыргызский · Русский · Английский" data-kg="Кыргызча · Орусча · Англисче">Кыргызский · Русский · Английский</span>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name" data-ru="Ваше имя" data-kg="Атыңыз">Ваше имя</label>
+            <input type="text" id="name" name="name" data-ru="Иван Иванов" data-kg="Жакып Жакыпов" placeholder="Иван Иванов" required />
+          </div>
+          <div class="form-group">
+            <label for="email" data-ru="Ваша почта" data-kg="Почтаңыз">Ваша почта</label>
+            <input type="email" id="email" name="email" placeholder="ivan@example.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message" data-ru="Сообщение" data-kg="Кат">Сообщение</label>
+          <textarea id="message" name="message" rows="5"
+            data-ru="Привет Расул, хочу с тобой поговорить..."
+            data-kg="Саламатсызбы Расул, сиз менен сүйлөшгүм келет..."
+            placeholder="Привет Расул, хочу с тобой поговорить..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full" data-ru="<i class='fa-solid fa-paper-plane'></i> Отправить" data-kg="<i class='fa-solid fa-paper-plane'></i> Жөнөтүү">
+          <i class="fa-solid fa-paper-plane"></i> Отправить
+        </button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="footer-logo">
+        <img src="logo.svg" alt="Джанкорозов Расул" class="footer-logo-img" />
+      </a>
+      <p class="footer-copy" data-ru="© 2024 Расул Джанкорозов. Все права защищены." data-kg="© 2024 Расул Джанкорозов. Бардык укуктар корголгон.">
+        © 2024 Расул Джанкорозов. Все права защищены.
+      </p>
+      <div class="footer-socials">
+        <a href="mailto:janrasula.2011@gmail.com" title="Почта"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/rasul2011-coder" target="_blank" rel="noopener" title="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
